@@ -8,8 +8,6 @@ git clone --recurse-submodules -j8 https://github.com/GwendalBeaumont/gitops-pow
 
 ## Requirements
 
-- Java
-- Gradle
 - Container software (e.g., Docker, Podman, Orbstack)
 - `docker-compose` or equivalent
 
@@ -17,13 +15,13 @@ git clone --recurse-submodules -j8 https://github.com/GwendalBeaumont/gitops-pow
 
 Simply use this command:
 
-```
+```sh
 docker compose up
 ```
 
 Or in detached mode:
 
-```
+```sh
 docker compose up -d
 ```
 
