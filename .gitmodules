@@ -1,0 +1,3 @@
+[submodule "merode-interpreter-api"]
+	path = merode-interpreter-api
+	url = git@github.com:AmaVic/merode-interpreter-api.git
