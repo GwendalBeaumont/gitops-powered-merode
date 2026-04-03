@@ -11,12 +11,9 @@ services:
   dashboard:
     image: nodered/node-red
     volumes:
-      - node_red_data:/data
+      - ./node-red/data:/data
     ports:
       - 1880:1880
-
-volumes:
-  node_red_data:
 
 networks:
   merode:

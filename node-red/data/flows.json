@@ -1,0 +1,1499 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Members",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d5803f4ac49a04fe",
+        "type": "tab",
+        "label": "KPIs",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "41a74d45eeee0db1",
+        "type": "tab",
+        "label": "Titles",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5bdd6e6c07a7baa5",
+        "type": "tab",
+        "label": "Copies",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "tabManual",
+        "type": "tab",
+        "label": "Manual",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dd4efee181387965",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "f35a654b338ef894",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "a979b979dd14bdb7",
+        "type": "ui-page",
+        "name": "Members",
+        "ui": "dd4efee181387965",
+        "path": "/members",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "f35a654b338ef894",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "2df7b996e52c4054",
+        "type": "ui-group",
+        "name": "GET",
+        "page": "a979b979dd14bdb7",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b55f45f289e4a473",
+        "type": "ui-group",
+        "name": "POST",
+        "page": "a979b979dd14bdb7",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "eb2ce81f641a2d62",
+        "type": "ui-page",
+        "name": "Books",
+        "ui": "dd4efee181387965",
+        "path": "/books",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "f35a654b338ef894",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "9237e2e55b6a07b8",
+        "type": "ui-group",
+        "name": "Title management",
+        "page": "eb2ce81f641a2d62",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "707de58635c49cb3",
+        "type": "ui-group",
+        "name": "Copy management",
+        "page": "eb2ce81f641a2d62",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "7e14c13ad3ee5362",
+        "type": "ui-group",
+        "name": "KPI",
+        "page": "eb2ce81f641a2d62",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "984b4f7bc0760b6e",
+        "type": "ui-form",
+        "z": "f6f2187d.f17ca8",
+        "name": "Create a member",
+        "group": "b55f45f289e4a473",
+        "label": "Create a new member",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "key": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Address",
+                "key": "address",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "address": ""
+        },
+        "payload": "",
+        "submit": "Create",
+        "cancel": "Clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "passthru": false,
+        "dropdownOptions": [],
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "553593d68a5eed0a",
+                "303ee0611fb41036"
+            ]
+        ]
+    },
+    {
+        "id": "553593d68a5eed0a",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2f5b71cbdd26c320",
+        "type": "http request",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://backend:8080/event",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 400,
+        "wires": [
+            [
+                "5494360cb717d915"
+            ]
+        ]
+    },
+    {
+        "id": "303ee0611fb41036",
+        "type": "template",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"type\": \"EVcrMember\",\n    \"properties\": {\n        \"Name\": \"{{payload.name}}\",\n        \"Address\": \"{{payload.address}}\"\n    }\n}",
+        "output": "str",
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "553593d68a5eed0a",
+                "2f5b71cbdd26c320"
+            ]
+        ]
+    },
+    {
+        "id": "66eb9b6005bcf416",
+        "type": "ui-button",
+        "z": "f6f2187d.f17ca8",
+        "group": "2df7b996e52c4054",
+        "name": "retrieveMembers",
+        "label": "Manually retrieve members",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "966db42105862f3e"
+            ]
+        ]
+    },
+    {
+        "id": "966db42105862f3e",
+        "type": "http request",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://backend:8080/member",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "996f5a26774ec5d3"
+            ]
+        ]
+    },
+    {
+        "id": "d523a95ef2fd4193",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "testing input",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "[{\"eventId\":0,\"masters\":{},\"type\":\"EVcrMember\",\"objectId\":0,\"properties\":{\"Address\":\"belgium\",\"Name\":\"Charlotte\"}}, {\"eventId\":1,\"masters\":{},\"type\":\"EVcrMember\",\"objectId\":1,\"properties\":{\"Address\":\"France\",\"Name\":\"Gwendal\"}}]",
+        "payloadType": "str",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "996f5a26774ec5d3"
+            ]
+        ]
+    },
+    {
+        "id": "996f5a26774ec5d3",
+        "type": "json",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 490,
+        "y": 140,
+        "wires": [
+            [
+                "ffed45f174f2c324"
+            ]
+        ]
+    },
+    {
+        "id": "ffed45f174f2c324",
+        "type": "split",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "894f158c8ea508d8"
+            ]
+        ]
+    },
+    {
+        "id": "a0937acfe30aa1af",
+        "type": "ui-table",
+        "z": "f6f2187d.f17ca8",
+        "group": "2df7b996e52c4054",
+        "name": "",
+        "label": "List of members",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 1020,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "894f158c8ea508d8",
+        "type": "template",
+        "z": "f6f2187d.f17ca8",
+        "name": "extraction",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"Name\": \"{{payload.properties.Name}}\",\n    \"Address\": \"{{payload.properties.Address}}\"\n}",
+        "output": "str",
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "d92d64f945856407"
+            ]
+        ]
+    },
+    {
+        "id": "e8321a1066b25f99",
+        "type": "join",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 790,
+        "y": 260,
+        "wires": [
+            [
+                "63bf886ff2916f18",
+                "a0937acfe30aa1af",
+                "1c45094b3db48b9b"
+            ]
+        ]
+    },
+    {
+        "id": "63bf886ff2916f18",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d92d64f945856407",
+        "type": "json",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 650,
+        "y": 260,
+        "wires": [
+            [
+                "e8321a1066b25f99"
+            ]
+        ]
+    },
+    {
+        "id": "1c45094b3db48b9b",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "5494360cb717d915",
+        "type": "trigger",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "val",
+        "op2type": "val",
+        "duration": "250",
+        "extend": "false",
+        "overrideDelay": "false",
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 700,
+        "y": 400,
+        "wires": [
+            [
+                "966db42105862f3e"
+            ]
+        ]
+    },
+    {
+        "id": "426326b555140505",
+        "type": "ui-gauge",
+        "z": "d5803f4ac49a04fe",
+        "name": "Loans / year",
+        "group": "7e14c13ad3ee5362",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Avg. loans / title / year",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "loans",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#f66151",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "5",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 710,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0c9a0a055ec5b74",
+        "type": "inject",
+        "z": "d5803f4ac49a04fe",
+        "name": "Test KPI",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "kpi",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "54e3db3d84fba6de"
+            ]
+        ]
+    },
+    {
+        "id": "54e3db3d84fba6de",
+        "type": "function",
+        "z": "d5803f4ac49a04fe",
+        "name": "function 1",
+        "func": "msg.payload = (msg.payload % 5 + Math.random()*5).toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "426326b555140505",
+                "99279dc23ad40ddb"
+            ]
+        ]
+    },
+    {
+        "id": "99279dc23ad40ddb",
+        "type": "debug",
+        "z": "d5803f4ac49a04fe",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "02edbb0f3e3dad4f",
+        "type": "ui-button",
+        "z": "41a74d45eeee0db1",
+        "group": "9237e2e55b6a07b8",
+        "name": "retrieveTitle",
+        "label": "Manually retrieve titles",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "title",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "58b05c8328b376e5"
+            ]
+        ]
+    },
+    {
+        "id": "537fbdcde692b064",
+        "type": "ui-table",
+        "z": "41a74d45eeee0db1",
+        "group": "9237e2e55b6a07b8",
+        "name": "",
+        "label": "List of titles",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 1070,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c5e3a5df02e1aa6",
+        "type": "debug",
+        "z": "41a74d45eeee0db1",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6005660e016206ca",
+        "type": "debug",
+        "z": "41a74d45eeee0db1",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "58b05c8328b376e5",
+        "type": "http request",
+        "z": "41a74d45eeee0db1",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://backend:8080/title",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 60,
+        "wires": [
+            [
+                "1087fc3ec4ce1be1",
+                "d672353747bb9ab1"
+            ]
+        ]
+    },
+    {
+        "id": "d2e811b656dda26b",
+        "type": "inject",
+        "z": "41a74d45eeee0db1",
+        "name": "testing input",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "[{\"eventId\":0,\"masters\":{},\"type\":\"EVcrMember\",\"objectId\":0,\"properties\":{\"Address\":\"belgium\",\"Name\":\"Charlotte\"}}, {\"eventId\":1,\"masters\":{},\"type\":\"EVcrMember\",\"objectId\":1,\"properties\":{\"Address\":\"France\",\"Name\":\"Gwendal\"}}]",
+        "payloadType": "str",
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "1087fc3ec4ce1be1"
+            ]
+        ]
+    },
+    {
+        "id": "1087fc3ec4ce1be1",
+        "type": "json",
+        "z": "41a74d45eeee0db1",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "a71deb4e7f787507"
+            ]
+        ]
+    },
+    {
+        "id": "a71deb4e7f787507",
+        "type": "split",
+        "z": "41a74d45eeee0db1",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "a4676ab0c0a47935",
+                "d672353747bb9ab1"
+            ]
+        ]
+    },
+    {
+        "id": "a4676ab0c0a47935",
+        "type": "template",
+        "z": "41a74d45eeee0db1",
+        "name": "extraction",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"ID\": \"{{payload.id}}\",\n    \"Title\": \"{{payload.properties.Title}}\",\n    \"Author\": \"{{payload.properties.Author}}\",\n    \"Publication Year\": \"{{payload.properties.PublicationYear}}\"\n}",
+        "output": "str",
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "2160cb6d59065a56"
+            ]
+        ]
+    },
+    {
+        "id": "148785cd56e5a0b4",
+        "type": "join",
+        "z": "41a74d45eeee0db1",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 850,
+        "y": 240,
+        "wires": [
+            [
+                "2c5e3a5df02e1aa6",
+                "537fbdcde692b064",
+                "6005660e016206ca"
+            ]
+        ]
+    },
+    {
+        "id": "2160cb6d59065a56",
+        "type": "json",
+        "z": "41a74d45eeee0db1",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 710,
+        "y": 240,
+        "wires": [
+            [
+                "148785cd56e5a0b4"
+            ]
+        ]
+    },
+    {
+        "id": "a8ad087e5850f6fb",
+        "type": "ui-form",
+        "z": "41a74d45eeee0db1",
+        "name": "Create a title",
+        "group": "9237e2e55b6a07b8",
+        "label": "Create a new title",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Title",
+                "key": "title",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Author",
+                "key": "author",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Publication Year",
+                "key": "publicationYear",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "title": "",
+            "author": "",
+            "publicationYear": ""
+        },
+        "payload": "",
+        "submit": "Create",
+        "cancel": "Clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "passthru": false,
+        "dropdownOptions": [],
+        "x": 270,
+        "y": 400,
+        "wires": [
+            [
+                "3e51588334e159f2",
+                "88931d2a0e8540ef"
+            ]
+        ]
+    },
+    {
+        "id": "3e51588334e159f2",
+        "type": "debug",
+        "z": "41a74d45eeee0db1",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "663cd938ff81924a",
+        "type": "http request",
+        "z": "41a74d45eeee0db1",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://backend:8080/event",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88931d2a0e8540ef",
+        "type": "template",
+        "z": "41a74d45eeee0db1",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"type\": \"EVcrTitle\",\n    \"properties\": {\n        \"Title\": \"{{payload.title}}\",\n        \"Author\": \"{{payload.author}}\",\n        \"PublicationYear\": \"{{payload.publicationYear}}\"\n    }\n}",
+        "output": "str",
+        "x": 500,
+        "y": 400,
+        "wires": [
+            [
+                "3e51588334e159f2",
+                "663cd938ff81924a"
+            ]
+        ]
+    },
+    {
+        "id": "d672353747bb9ab1",
+        "type": "debug",
+        "z": "41a74d45eeee0db1",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7100365161c119ba",
+        "type": "ui-button",
+        "z": "5bdd6e6c07a7baa5",
+        "group": "707de58635c49cb3",
+        "name": "retrieveCopy",
+        "label": "Manually retrieve copies",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "copy",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "7aa5df79c1a72388"
+            ]
+        ]
+    },
+    {
+        "id": "7aa5df79c1a72388",
+        "type": "http request",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://backend:8080/copy",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "fbb5ab8a68261f6b",
+                "b201b891ab36cdfa"
+            ]
+        ]
+    },
+    {
+        "id": "7cd78e2c63ab749a",
+        "type": "inject",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "testing input",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "[{\"eventId\":0,\"masters\":{},\"type\":\"EVcrMember\",\"objectId\":0,\"properties\":{\"Address\":\"belgium\",\"Name\":\"Charlotte\"}}, {\"eventId\":1,\"masters\":{},\"type\":\"EVcrMember\",\"objectId\":1,\"properties\":{\"Address\":\"France\",\"Name\":\"Gwendal\"}}]",
+        "payloadType": "str",
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "fbb5ab8a68261f6b"
+            ]
+        ]
+    },
+    {
+        "id": "fbb5ab8a68261f6b",
+        "type": "json",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "03faf198052c8382"
+            ]
+        ]
+    },
+    {
+        "id": "03faf198052c8382",
+        "type": "split",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 550,
+        "y": 200,
+        "wires": [
+            [
+                "0cf83e31c7ad85cb"
+            ]
+        ]
+    },
+    {
+        "id": "2841e0b727da97c5",
+        "type": "ui-table",
+        "z": "5bdd6e6c07a7baa5",
+        "group": "707de58635c49cb3",
+        "name": "",
+        "label": "List of copies",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 1070,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0cf83e31c7ad85cb",
+        "type": "template",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "extraction",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"TitleID\": \"{{payload.masters.Title_Copy.id}}\", \n    \"CopyID\": \"{{payload.properties.CopyID}}\",\n    \"Edition\": \"{{payload.properties.Edition}}\"\n}",
+        "output": "str",
+        "x": 560,
+        "y": 260,
+        "wires": [
+            [
+                "86987b985291b0b7"
+            ]
+        ]
+    },
+    {
+        "id": "4106508651a8d705",
+        "type": "join",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 850,
+        "y": 260,
+        "wires": [
+            [
+                "a0fc60bfb6f86058",
+                "2841e0b727da97c5",
+                "7be3cd6f716349d9"
+            ]
+        ]
+    },
+    {
+        "id": "a0fc60bfb6f86058",
+        "type": "debug",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "86987b985291b0b7",
+        "type": "json",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 710,
+        "y": 260,
+        "wires": [
+            [
+                "4106508651a8d705"
+            ]
+        ]
+    },
+    {
+        "id": "7be3cd6f716349d9",
+        "type": "debug",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "45e12ca3f52c1148",
+        "type": "ui-form",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "Create a copy",
+        "group": "707de58635c49cb3",
+        "label": "Create a new copy",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Title ID",
+                "key": "titleID",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "CopyID",
+                "key": "copyID",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Edition",
+                "key": "edition",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "titleID": "",
+            "copyID": "",
+            "edition": ""
+        },
+        "payload": "",
+        "submit": "Create",
+        "cancel": "Clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "passthru": false,
+        "dropdownOptions": [
+            {
+                "dropdown": "",
+                "value": "",
+                "label": ""
+            }
+        ],
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "bc1031466c05a08b",
+                "69dfe51d4b4549cd"
+            ]
+        ]
+    },
+    {
+        "id": "bc1031466c05a08b",
+        "type": "debug",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "693e5978c7490e87",
+        "type": "http request",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://backend:8080/event",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69dfe51d4b4549cd",
+        "type": "template",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"type\": \"EVacquireCopy\",\n    \"properties\": {\n        \"CopyID\": \"{{payload.copyID}}\",\n        \"Edition\": \"{{payload.edition}}\"\n    },\n    \"masters\": {\n        \"Title_Copy\": {{payload.titleID}}\n    }\n}",
+        "output": "json",
+        "x": 520,
+        "y": 460,
+        "wires": [
+            [
+                "bc1031466c05a08b",
+                "693e5978c7490e87"
+            ]
+        ]
+    },
+    {
+        "id": "b201b891ab36cdfa",
+        "type": "debug",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "57c53a6c92c757cd",
+        "type": "template",
+        "z": "tabManual",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 220,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    }
+]
