@@ -5,8 +5,8 @@ RUN gradle installDist
 
 FROM eclipse-temurin:21-alpine
 ENV APP_HOME=/usr/app
-WORKDIR $APP_HOME
 COPY --from=build $APP_HOME/build/install/merode .
-COPY ./model/model.mxp .
+CMD mkdir -p data
 EXPOSE 8080
-CMD ["./bin/merode", "-m", "model.mxp"]
+ENTRYPOINT ["./bin/merode"]
+CMD ["-m", "data/model.mxp"]

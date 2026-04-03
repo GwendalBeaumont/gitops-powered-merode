@@ -1,9 +1,11 @@
 services:
   backend:
-    image: localhost/merode-web
+    image: localhost/merode-web-api
     build:
       context: .
       dockerfile: merode.Dockerfile
+    volumes:
+      - ./data:/data
     ports:
       - 8081:8080
   dashboard:
