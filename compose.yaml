@@ -1,6 +1,6 @@
 services:
   backend:
-    image: localhost/merode-web-api
+    image: merode-interpreter-api
     build:
       context: .
       dockerfile: merode.Dockerfile
