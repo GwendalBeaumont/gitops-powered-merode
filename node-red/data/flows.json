@@ -39,6 +39,14 @@
         "env": []
     },
     {
+        "id": "69aa2379c8c67dd0",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
         "id": "dd4efee181387965",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -1280,10 +1288,14 @@
         "joiner": "\\n",
         "joinerType": "str",
         "useparts": false,
-        "accumulate": "false",
+        "accumulate": true,
         "timeout": "",
         "count": "",
         "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
         "x": 850,
         "y": 260,
         "wires": [
@@ -1478,6 +1490,138 @@
         "x": 680,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "41dea072ef482bbd",
+        "type": "ui-form",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "Create a multiple copies",
+        "group": "707de58635c49cb3",
+        "label": "Create a new copy",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "TitleID",
+                "key": "titleID",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "CopyID",
+                "key": "copyID",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Edition",
+                "key": "edition",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Amount",
+                "key": "amount",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "titleID": "",
+            "copyID": "",
+            "edition": "",
+            "amount": ""
+        },
+        "payload": "",
+        "submit": "Create",
+        "cancel": "Clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "passthru": false,
+        "dropdownOptions": [
+            {
+                "dropdown": "",
+                "value": "",
+                "label": ""
+            }
+        ],
+        "x": 330,
+        "y": 780,
+        "wires": [
+            [
+                "b87d0adca9918e74"
+            ]
+        ]
+    },
+    {
+        "id": "b1a3b1c36019822a",
+        "type": "template",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"type\": \"EVacquireCopy\",\n    \"properties\": {\n        \"CopyID\": \"{{payload.copyID}}\",\n        \"Edition\": \"{{payload.edition}}\"\n    },\n    \"masters\": {\n        \"Title_Copy\": {{payload.titleID}}\n    }\n}",
+        "output": "json",
+        "x": 840,
+        "y": 880,
+        "wires": [
+            [
+                "01daca9218d8b112"
+            ]
+        ]
+    },
+    {
+        "id": "01daca9218d8b112",
+        "type": "http request",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://backend:8080/event",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1070,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b87d0adca9918e74",
+        "type": "function",
+        "z": "5bdd6e6c07a7baa5",
+        "name": "function 2",
+        "func": "let result = [];\nfor (let i = 1; i <= msg.payload.amount; i++) {\n    result.push({ payload: msg.payload.CopyID + \"_C\" + String(i) });\n}\nreturn [result];\n\n\nconst titleID = msg.payload.TitleID;\nconst copyID = msg.payload.CopyID;\nconst edition = msg.payload.edition;\nconst amount = msg.payload.amount;\n\n// Build one message object per iteration, carrying all needed data\nconst messages = [];\nfor (let i = 1; i <= amount; i++) {\n    messages.push({\n        payload: {\n            titleID: titleID,\n            copyID: copyID + \"_C\" + String(i),\n            edition: edition\n        }\n    });\n}\n\nreturn [messages];  // sends each as a separate message on output 1",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 780,
+        "wires": [
+            [
+                "b1a3b1c36019822a",
+                "bc1031466c05a08b"
+            ]
+        ]
     },
     {
         "id": "57c53a6c92c757cd",
